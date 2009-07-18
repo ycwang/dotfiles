@@ -1,3 +1,6 @@
+alias ls='ls --color=auto'
+# ledger
+export LEDGER_FILE="~/notes/money/tim.ledger"
 # Subversion & Diff ------------------------------------------------
 export SVN_EDITOR='${EDITOR}'
 

@@ -1,0 +1,36 @@
+" PEP 8
+set textwidth=72
+set wm=2
+" ========================================
+" python_editing plugin
+" shift+F - toggle all folds on/off
+" f - toggle fold under the cursor
+" :call ReFold() to fix the fold
+" shift+e - save and run
+" gd - look for the definition of a function
+" ========================================
+" python_fn plugin
+" Shortcuts:
+"   ]t      -- Jump to beginning of block
+"   ]e      -- Jump to end of block
+"   ]v      -- Select (Visual Line Mode) block
+"   ]<      -- Shift block to left
+"   ]>      -- Shift block to right
+"   ]#      -- Comment selection
+"   ]u      -- Uncomment selection
+"   ]c      -- Select current/previous class
+"   ]d      -- Select current/previous function
+"   ]<up>   -- Jump to previous line with the same/lower indentation
+"   ]<down> -- Jump to next line with the same/lower indentation
+
+" Vst note
+au BufRead,BufNewFile *.note set filetype=rst
+
+" Taglist plugin
+nnoremap <silent> <F8> :TlistToggle<CR>
+
+" python fold
+set fdn=2
+
+" toggle paste indentation
+set pastetoggle=<F2>
